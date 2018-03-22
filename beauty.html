@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="otis">
+  <meta name="Keywords" content="54期 朝歌 div 阿里 作业">
+  <meta name="Description" content="54期朝歌老师作业">
+  <title>Document</title>
+	<style type="text/css">
+		body,ul,li,div{margin:0px;padding:0;background-color:#222;}
+		ul,li{list-style:none;}
+		.p-r{
+			position:relative;
+		}
+		.p-a{
+			position:absolute;
+		}
+		clearfix:after{
+			content:"";
+			display:block;
+			clear:both;
+		}
+		.container{
+			width:500px;
+			height:500px;
+			border-radius:10px;
+			margin:50px auto;
+			cursor:pointer;
+			overflow:hidden;
+		}
+		.pic{
+			height:400px;
+			width:400px;
+			margin:50px auto;
+			border-radius:10px;
+			overflow:hidden;
+		}
+		div.top,div.bottom{
+			width:500px;
+			height:5px;
+		}
+		.top{
+			top:0px;
+			left:0px;
+			animation:top  8s linear  forwards;
+		}
+		.bottom{
+			top:495px;
+			left:0px;
+			animation:bottom  8s linear  forwards;
+		}
+		div.left,div.right{
+			height:500px;
+			width:5px;
+		}
+		.left{
+			top:0px;
+			left:0px;
+			animation:left  8s linear  forwards;
+		}
+		.right{
+			left:495px;
+			top:0px;
+			animation:right  8s linear  forwards;
+		}
+		.top,
+		.bottom,
+		.right,
+		.left{
+					background-color:#00ffff;
+		}
+		@keyframes top{
+			from{left:-500px}
+			to{left:0px;}
+		}
+		@keyframes right{
+			from{top:-500px}
+			to{top:0px;}
+		}
+		@keyframes bottom{
+			from{left:500px}
+			to{left:0px;}
+		}
+		@keyframes left{
+			from{top:500px}
+			to{top:0px;}
+		}
+		ul > li{
+			float:left;
+			width:80px;
+			height:80px;
+			opacity:0;
+			background:url("01.png") no-repeat 0 0/400px 400px;
+		}
+		li:nth-of-type(1){
+			background-position:0 0;
+			animation:ani 1s linear forwards;
+		}
+		li:nth-of-type(2){
+			background-position:-80px 0px;
+			animation:ani 1s 1s  linear forwards;
+		}
+		li:nth-of-type(3){
+			background-position:-160px 0;
+			animation:ani 1s 2s linear forwards;
+		}
+		li:nth-of-type(4){
+			background-position:-240px 0;
+			animation:ani 1s 3s linear forwards;
+		}
+			li:nth-of-type(5){
+			background-position:-320px 0;
+			animation:ani 1s  4s linear forwards;
+		}
+			li:nth-of-type(6){
+			background-position:0 -80px;
+			animation:ani 1s 1s linear forwards;
+		}
+		li:nth-of-type(7){
+			background-position:-80px -80px;
+			animation:ani 1s 2s  linear forwards;
+		}
+		li:nth-of-type(8){
+			background-position:-160px -80px;
+			animation:ani 1s 3s linear forwards;
+		}
+		li:nth-of-type(9){
+			background-position:-240px -80px;
+			animation:ani 1s 4s linear forwards;
+		}
+			li:nth-of-type(10){
+			background-position:-320px -80px;
+			animation:ani 1s  5s linear forwards;
+		}
+				li:nth-of-type(11){
+			background-position:0px  -160px;
+			animation:ani 1s 2s linear forwards;
+		}
+		li:nth-of-type(12){
+			background-position:-80px -160px;
+			animation:ani 1s 3s  linear forwards;
+		}
+		li:nth-of-type(13){
+			background-position:-160px -160px;
+			animation:ani 1s 4s linear forwards;
+		}
+		li:nth-of-type(14){
+			background-position:-240px -160px;
+			animation:ani 1s 5s linear forwards;
+		}
+			li:nth-of-type(15){
+			background-position:-320px -160px;
+			animation:ani 1s  6s linear forwards;
+		}
+						li:nth-of-type(16){
+			background-position:0px  -240px;
+			animation:ani 1s 3s linear forwards;
+		}
+		li:nth-of-type(17){
+			background-position:-80px -240px;
+			animation:ani 1s 4s  linear forwards;
+		}
+		li:nth-of-type(18){
+			background-position:-160px -240px;
+			animation:ani 1s 5s linear forwards;
+		}
+		li:nth-of-type(19){
+			background-position:-240px -240px;
+			animation:ani 1s 6s linear forwards;
+		}
+			li:nth-of-type(20){
+			background-position:-320px -240px;
+			animation:ani 1s  7s linear forwards;
+		}
+								li:nth-of-type(21){
+			background-position:0px  -320px;
+			animation:ani 1s 4s linear forwards;
+		}
+		li:nth-of-type(22){
+			background-position:-80px -320px;
+			animation:ani 1s 5s  linear forwards;
+		}
+		li:nth-of-type(23){
+			background-position:-160px -320px;
+			animation:ani 1s 6s linear forwards;
+		}
+		li:nth-of-type(24){
+			background-position:-240px -320px;
+			animation:ani 1s 7s linear forwards;
+		}
+			li:nth-of-type(25){
+			background-position:-320px -320px;
+			animation:ani 1s  8s linear forwards;
+		}
+		@keyframes ani{
+			from{opacity:0;}
+			to{opacity:1;}
+		}
+		.run-box{
+			position:relative;
+			height:100px;
+			width:100%;
+		}
+		.pic:hover li{
+			animation-play-state:paused;/* animation-play-state:paused/running属性用于控制animation的状态 */ */
+		}
+		.run-ball{
+			position:absolute;
+			width:50px;
+			height:50px;
+			background-color:#567309;
+			left:5%;
+			transition:left 8s cubic-bezier(0,1.17,.92,.88),background-color  8s ease-in-out;
+		}
+		.run-box:hover  .run-ball{
+				left:95%;
+				background-color:#897891;
+		}
+	</style>
+ </head>
+	<body>
+			<div class="container p-r">
+					<div class="top p-a"></div>
+					<div class="right  p-a"></div>
+					<div class="bottom  p-a"></div>
+					<div class="left p-a"></div>
+					<ul class="pic  clearfix">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+			</div>
+			<div class="run-box">
+				<div class="run-ball">
+				</div>
+			</div>
+	 </body>
+</html>
